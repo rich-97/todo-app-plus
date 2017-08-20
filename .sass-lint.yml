@@ -1,0 +1,8 @@
+files:
+  includes: 'public/scss/*.scss'
+
+rules:
+  indentation:
+    - 2
+    -
+      size: 2

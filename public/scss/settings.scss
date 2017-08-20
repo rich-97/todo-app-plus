@@ -1,0 +1,21 @@
+@include font-face('PT-Mono', '../font/PT-Mono.ttf');
+
+@mixin set-svg {
+  height: $svg-size;
+  width: $svg-size;
+}
+
+$svg-size: 50px;
+
+// Theme light.
+$gray: #ccc;
+$white: #fff;
+$black: #000;
+
+// Theme dark.
+$dark-black: #282e33;
+$light-black: #3d444b;
+$green-aqua: #4be1c3;
+
+// Font.
+$font: 'PT-Mono';

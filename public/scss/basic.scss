@@ -1,0 +1,31 @@
+* {
+  @include trans;
+  font-family: $font;
+}
+
+.container {
+  @include media(xs) {
+    @include center-block(70, 80);
+  }
+
+  @include media(sm) {
+    @include center-block(60, 80);
+  }
+
+  @include media(md) {
+    @include center-block(50, 80);
+  }
+
+  @include media(lg) {
+    @include center-block(45, 80);
+  }
+}
+
+form {
+  padding-bottom: 20px;
+
+  label {
+    display: block;
+    text-align: center;
+  }
+}

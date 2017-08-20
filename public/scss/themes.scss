@@ -1,0 +1,111 @@
+.dark {
+  body {
+    @include bgc($dark-black);
+    color: $white;
+  }
+
+  #todo-app {
+    @include bgc($light-black);
+  }
+
+  form {
+    border-bottom: 1px solid $green-aqua;
+  }
+
+  input[type='text'] {
+    @include border(2, $green-aqua);
+    @include bgc($light-black);
+    color: $white;
+  }
+
+  .todos {
+    li:hover {
+      @include bgc(lighten($dark-black, 12.5));
+    }
+
+  }
+
+  .form-checkbox,
+  .todo-checkbox {
+    label {
+      @include border(2, $green-aqua);
+
+      &::after {
+        @include bgc($green-aqua);
+      }
+    }
+  }
+
+  .todo-text {
+    color: $white;
+  }
+
+  .panel {
+    border-top: 1px solid $dark-black;
+
+    div {
+      &:hover {
+        @include bgc(lighten($dark-black, 12.5));
+      }
+    }
+  }
+
+  .list-message {
+    color: $gray;
+  }
+}
+
+.light {
+  body {
+    @include bgc($gray);
+  }
+
+  #todo-app {
+    @include bgc($white);
+  }
+
+  form {
+    border-bottom: 1px solid $gray;
+  }
+
+  input[type='text'] {
+    @include border(2, $gray);
+    @include bgc($white);
+  }
+
+  .todos {
+    li:hover {
+      @include bgc(lighten($gray, 12.5));
+    }
+
+  }
+
+  .form-checkbox,
+  .todo-checkbox {
+    label {
+      @include border(2, $gray);
+
+      &::after {
+        @include bgc($black);
+      }
+    }
+  }
+
+  .todo-text {
+    color: darken($gray, 37.5);
+  }
+
+  .panel {
+    border-top: 1px solid $gray;
+
+    div {
+      &:hover {
+        @include bgc(lighten($gray, 12.5));
+      }
+    }
+  }
+
+  .list-message {
+    color: $gray;
+  }
+}

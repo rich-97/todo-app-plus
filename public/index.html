@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ricardo Moreno">
+    <title>Todo App +</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bundle.js" charset="utf-8"></script>
+    <script type="x-template/underscore" id="todo-tmp">
+        <div class="todo">
+            <div class="todo-checkbox">
+                <input type="checkbox" name="select">
+                <label for="select"></label>
+            </div>
+
+            <span class="todo-text"><%= description %></span>
+        </div>
+
+        <div class="todo-delete">
+            <img src="svg/x.svg" alt="x">
+        </div>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="todo-app">
+            <form action="/" method="post">
+                <h1>Write a <b>Todo</b></h1>
+
+                <input type="text" autocomplete="off" autofocus>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" name="select"/>
+                    <label for="select"></label>
+                </div>
+
+                <span>Show completed</span>
+            </form>
+
+            <div class="panel">
+                <div class="panel-total"></div>
+                <div class="panel-complete">
+                    <img src="svg/complete.svg" alt="complete">
+                </div>
+                <div class="panel-delete">
+                    <img src="svg/delete.svg" alt="delete">
+                </div>
+            </div>
+        </div>
+
+        <div class="change-theme" id="themes">
+            <span>dark</span>|<span>light</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+#todo-app {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+form > h1 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+input {
+  &[type='text'] {
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 44px;
+    margin: 6px 0;
+    width: 100%;
+  }
+
+  &[type='checkbox'] {
+    position: relative;
+    visibility: hidden;
+
+    &:checked + label {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.todos {
+  padding: 0;
+
+  li {
+    @include trans;
+    list-style: none;
+    overflow: hidden;
+  }
+}
+
+.todo {
+  @include overflow-x;
+  float: left;
+  padding: 11.5px 0;
+  width: 85%;
+}
+
+.form-checkbox,
+.todo-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+
+  label {
+    cursor: pointer;
+    height: 20px;
+    left: 4px;
+    margin: 0 10px;
+    position: absolute;
+    top: 1.5px;
+    width: 20px;
+
+    &::after {
+      @include trans;
+      content: '';
+      height: 16px;
+      left: 2px;
+      opacity: 0;
+      position: absolute;
+      top: 2px;
+      width: 16px;
+    }
+
+    &:hover {
+      &::after {
+        opacity: .3;
+      }
+    }
+  }
+}
+
+.form-checkbox {
+  margin-top: 6px;
+}
+
+.todo-text {
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.todo-delete {
+  cursor: pointer;
+  float: left;
+  width: 15%;
+
+  img {
+    @include set-svg;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.panel {
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+
+  div {
+    @include trans;
+    border-radius: 2.5px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+
+    img {
+      @include set-svg;
+      margin: 0 auto;
+    }
+
+    &:first-child {
+      cursor: default;
+      margin: auto 0;
+    }
+  }
+}
+
+.ready-todo {
+  text-decoration: line-through;
+}
+
+.list-message {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.completed {
+  display: none;
+
+  .todo-text {
+    text-decoration: line-through;
+  }
+}
+
+.change-theme {
+  margin-top: 50px;
+  text-align: center;
+
+  span {
+    cursor: pointer;
+    margin: 5px;
+  }
+}

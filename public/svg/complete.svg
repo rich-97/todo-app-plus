@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg4589"
+   inkscape:version="0.92.0 unknown"
+   sodipodi:docname="already.svg">
+  <defs
+     id="defs4583" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="298.11268"
+     inkscape:cy="546.54391"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="949"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4586">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#3457d9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.26565933"
+       id="rect5134"
+       width="208.97682"
+       height="27.507582"
+       x="-84.006767"
+       y="174.23442"
+       rx="6.6341848"
+       ry="4.8626876"
+       transform="matrix(0.7569462,-0.6534772,0.55213986,0.8337515,0,0)" />
+    <rect
+       style="fill:#3457d9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.26568162"
+       id="rect5136"
+       width="79.382301"
+       height="21.854763"
+       x="120.1192"
+       y="66.198975"
+       rx="6.860198"
+       ry="4.7032738"
+       transform="matrix(0.56779939,0.82316696,-0.74358707,0.66863912,0,0)"
+       inkscape:transform-center-x="-0.78859926"
+       inkscape:transform-center-y="6.7905061" />
+  </g>
+</svg>
