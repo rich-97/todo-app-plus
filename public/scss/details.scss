@@ -37,8 +37,13 @@ input {
 
   li {
     @include trans;
+    border-bottom: 1px solid $gray;
     list-style: none;
     overflow: hidden;
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 }
 
