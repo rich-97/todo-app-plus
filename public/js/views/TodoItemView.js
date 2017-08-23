@@ -33,10 +33,11 @@ module.exports = View.extend({
     const oldDesc = this.model.get('description')
     const newDesc = window.prompt('Enter the new description:', oldDesc)
 
-    this.model.set('description', newDesc)
-    this.model.save()
-
-    this.render()
+    if (newDesc) {
+      this.model.set('description', newDesc)
+      this.model.save()
+      this.render()
+    }
   },
   render: function () {
     const html = this.template(this.model.toJSON())
