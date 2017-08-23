@@ -101,6 +101,7 @@ input {
     @include set-svg;
     display: block;
     margin: 0 auto;
+    margin-top: 25px;
   }
 }
 
@@ -154,5 +155,22 @@ input {
   span {
     cursor: pointer;
     margin: 5px;
+  }
+}
+
+.todo-created-at {
+  color: darken($gray, 15);
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.todo {
+  .todo-checkbox {
+    padding-top: 5px;
+
+    label {
+      top: 22px;
+    }
   }
 }

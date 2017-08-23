@@ -14,6 +14,9 @@ module.exports = function (sequelize, DataTypes) {
     completed: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
+    },
+    createdAt: {
+      type: DataTypes.STRING
     }
   }
 

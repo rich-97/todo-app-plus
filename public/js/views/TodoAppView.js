@@ -1,5 +1,6 @@
 const { View, $ } = require('backbone')
 const _ = require('underscore')
+const moment = require('moment');
 
 const TodoItem = require('../TodoItem')
 const TodoListView = require('./TodoListView')
@@ -15,7 +16,10 @@ module.exports = View.extend({
   onSubmitForm: function (event) {
     const $input = this.$el.find('input[type=text]')
     const todoDesc = $input.val()
-    const todoItem = new TodoItem({ description: todoDesc })
+    const todoItem = new TodoItem({
+      description: todoDesc,
+      createdAt: moment().format('dddd D, MMMM YYYY, h:mm a')
+    })
 
     todoItem.save()
     this.todoListView.collection.add(todoItem)
